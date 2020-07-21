@@ -1,0 +1,20 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "build": "./node_modules/.bin/buidler compile",
+    "test": "./node_modules/.bin/buidler test",
+    "deploy": "./node_modules/.bin/buidler run --network ${NETWORK:-kovan} ./scripts/deploy.js"
+  },
+  "dependencies": {
+    "@nomiclabs/buidler": "^1.3.8",
+    "@nomiclabs/buidler-ethers": "^2.0.0",
+    "@nomiclabs/buidler-etherscan": "^1.3.3",
+    "@nomiclabs/buidler-waffle": "^2.0.0",
+    "ethereum-waffle": "^3.0.0",
+    "ethers": "^5.0.0",
+    "openzeppelin-solidity": "^2.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
+  }
+}
